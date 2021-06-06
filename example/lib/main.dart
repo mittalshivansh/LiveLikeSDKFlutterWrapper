@@ -3,6 +3,7 @@ import 'dart:async';
 
 import 'package:flutter/services.dart';
 import 'package:ll_flutter_demo/ll_flutter_demo.dart';
+import 'package:ll_flutter_demo/ll_view.dart';
 
 void main() {
   runApp(MyApp());
@@ -52,7 +53,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text('Plugin example app'),
         ),
         body: Center(
-          child: Text('Running on: $_platformVersion\n'),
+          child: LLEngagementView("enter-client-id", "enter-program-id"),
         ),
       ),
     );

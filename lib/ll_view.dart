@@ -5,7 +5,10 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/rendering.dart';
 
 class LLEngagementView extends StatelessWidget {
-  const LLEngagementView({Key? key}) : super(key: key);
+  LLEngagementView(this.clientId, this.programId) : super(key: Key("ll_view"));
+
+  final String clientId;
+  final String programId;
 
   @override
   Widget build(BuildContext context) {
@@ -13,6 +16,9 @@ class LLEngagementView extends StatelessWidget {
     final String viewType = 'll-view';
     // Pass parameters to the platform side.
     final Map<String, dynamic> creationParams = <String, dynamic>{};
+
+    creationParams["clientId"] = clientId;
+    creationParams["programId"] = programId;
 
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:

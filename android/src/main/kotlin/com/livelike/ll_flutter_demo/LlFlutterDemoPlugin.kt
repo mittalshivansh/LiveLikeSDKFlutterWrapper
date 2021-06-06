@@ -19,6 +19,11 @@ class LlFlutterDemoPlugin: FlutterPlugin, MethodCallHandler {
   override fun onAttachedToEngine(@NonNull flutterPluginBinding: FlutterPlugin.FlutterPluginBinding) {
     channel = MethodChannel(flutterPluginBinding.binaryMessenger, "ll_flutter_demo")
     channel.setMethodCallHandler(this)
+
+    flutterPluginBinding
+      .platformViewRegistry
+      .registerViewFactory("ll-view", LLNativeViewFactory())
+
   }
 
   override fun onMethodCall(@NonNull call: MethodCall, @NonNull result: Result) {
