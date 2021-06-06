@@ -6,7 +6,8 @@ This is flutter package plugin wrapping Livelile's engagement suite sdk for both
 
 This package expose the LLEngagementView which is basically the combination of widget and chatview. 
 
-`@override
+```dart
+@override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
@@ -19,5 +20,5 @@ This package expose the LLEngagementView which is basically the combination of w
         ),
       ),
     );
-  }`
+  }```
 
