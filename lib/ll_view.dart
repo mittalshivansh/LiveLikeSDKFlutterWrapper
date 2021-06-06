@@ -51,10 +51,15 @@ class LLEngagementView extends StatelessWidget {
       //   layoutDirection: TextDirection.ltr,
       //   creationParams: creationParams,
       //   creationParamsCodec: const StandardMessageCodec(),
-      // );
+      // ); texture view based implementation
       case TargetPlatform.iOS:
         // return widget on iOS.
-        throw UnsupportedError("Unsupported platform view");
+        return UiKitView(
+          viewType: viewType,
+          layoutDirection: TextDirection.ltr,
+          creationParams: creationParams,
+          creationParamsCodec: const StandardMessageCodec(),
+        );
       default:
         throw UnsupportedError("Unsupported platform view");
     }

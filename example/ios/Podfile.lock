@@ -1,11 +1,31 @@
 PODS:
+  - EngagementSDK (2.24):
+    - lottie-ios (~> 3.0)
+    - Mixpanel-swift (~> 2.7)
+    - PubNub (~> 4.12.0)
   - Flutter (1.0.0)
   - ll_flutter_demo (0.0.1):
+    - EngagementSDK
     - Flutter
+  - lottie-ios (3.2.3)
+  - Mixpanel-swift (2.10.0):
+    - Mixpanel-swift/Complete (= 2.10.0)
+  - Mixpanel-swift/Complete (2.10.0)
+  - PubNub (4.12.0):
+    - PubNub/Core (= 4.12.0)
+  - PubNub/Core (4.12.0)
 
 DEPENDENCIES:
+  - EngagementSDK
   - Flutter (from `Flutter`)
   - ll_flutter_demo (from `.symlinks/plugins/ll_flutter_demo/ios`)
+
+SPEC REPOS:
+  trunk:
+    - EngagementSDK
+    - lottie-ios
+    - Mixpanel-swift
+    - PubNub
 
 EXTERNAL SOURCES:
   Flutter:
@@ -14,9 +34,13 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/ll_flutter_demo/ios"
 
 SPEC CHECKSUMS:
+  EngagementSDK: 874c24a14eebaa1fad2fd8643b566a2e2d9db464
   Flutter: 434fef37c0980e73bb6479ef766c45957d4b510c
-  ll_flutter_demo: f5492234efd6dc180a18af683381fee649b34c3d
+  ll_flutter_demo: 01eb9d6d1a01fbda4eddec9c716d1747831c707a
+  lottie-ios: c058aeafa76daa4cf64d773554bccc8385d0150e
+  Mixpanel-swift: 55b168424cf9424e461cb1e4ccc29236d871fedb
+  PubNub: 44e2eb39746e7231b98b978a8e3b9726b11dca9c
 
-PODFILE CHECKSUM: aafe91acc616949ddb318b77800a7f51bffa2a4c
+PODFILE CHECKSUM: de24b19f4d9e23347f2b923fe7b894e11ae4f4a3
 
 COCOAPODS: 1.10.1
