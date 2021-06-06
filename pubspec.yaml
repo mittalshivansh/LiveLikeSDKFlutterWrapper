@@ -1,5 +1,5 @@
 name: ll_flutter_demo
-description: A new flutter plugin project.
+description: This is the flutter package plugin, wrapping both android and ios native sdks.
 version: 0.0.1
 homepage:
 
