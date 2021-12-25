@@ -1,7 +1,7 @@
 name: ll_flutter_demo
 description: This is the flutter package plugin, wrapping both android and ios native sdks.
 version: 0.0.1
-homepage:
+homepage: https://bitbucket.org/livelike/engagement-sdk-flutter-demo/src/master/
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
